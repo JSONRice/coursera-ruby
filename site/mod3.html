@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .text-center {
+  font-size: 2em;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #222;
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+
+  .container .row {
+    border: 2px solid black;
+    background-color: grey;
+    width: 100%;
+    font-family: Arial, Helvetica;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+  }
+  .row p {
+    border: 1px;
+    border-color: black;
+  }
+  #sushi h2{color: blue; text-align: center;border: 1px;}
+  #bacon h2{color: yellow; text-align: center;border: 1px;}
+  #chicken h2{color: black; text-align: center;border: 1px;}
+
+/* END HOME PAGE */
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+  .container {
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+
+</style>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="#"><h1>Food,LLB</h1></a>
+            </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" class="visible-xs"> Chicken </a>
+            </li>
+            <li>
+              <a href="#" class="visible-xs"> Bacon </a>
+            </li>
+            <li>
+              <a href="#" class="visible-xs"> Sushi </a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+<div id="main-content" class="container">
+      <div class="container">
+        <p class="text-center">OUR MENU</p>
+    
+    <div class="row row1">
+      <div class="col-xs-12">
+        <section id="chicken">
+        <h2>Chicken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec</p>
+        </section>
+        </div></div>
+      
+      <div class="row row2">
+        <div class="col-xs-12">
+        <section id="bacon">
+        <h2>Bacon</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec</p>
+       </section>
+       </div></div>
+      
+      <div class="row row3">
+        <div class="col-xs-12">
+        <section id="sushi">
+        <h2>Sushi</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate necLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis ultrices turpis vel laoreet. In ultricies sagittis magna sed volutpat. Nulla fringilla risus sit amet odio interdum, pharetra vehicula risus fermentum. Sed vel ex eleifend, rhoncus augue sed, gravida mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit vel lacus tincidunt vulputate. Proin faucibus mauris lectus, in rutrum augue convallis in. Vestibulum quis nibh vitae ex rhoncus pretium. Mauris blandit vulputate dictum. Nunc ultricies sagittis dolor, eget tincidunt augue vulputate nec</p>
+        </section>
+      </div></div>
+      
+    </div><!-- End of row -->
+  </div><!-- End of #main-content -->
+  
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
